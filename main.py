@@ -8,15 +8,10 @@ from faq import convo
 
 app = Flask(__name__)
 
-#with open(r'faq.py','r', encoding='utf8') as file:
-  #convo = file.read()
-
 nlp = en_core_web_sm.load()
 bot = ChatBot("My chatbot")
 bot = ChatBot("ChatBot",storage_adaptor="chatterbot.storage.SQLstorageAdapter")
 trainer = ListTrainer(bot)
-#trainer = ChatterBotCorpusTrainer(bot)
-#trainer.train("chatterbot.corpus.english")
 trainer.train(convo)
 
 @app.route("/")
