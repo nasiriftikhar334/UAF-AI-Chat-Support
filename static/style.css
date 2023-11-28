@@ -1,0 +1,145 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+ }
+body {
+ font-family: Garamond;
+ background-color: none;
+ background-image :url("image/cs2.jpg");
+ width:100vw;
+ height:30vh;
+ Display:grid;
+ margin: auto;
+ justify-content: center;
+ overflow:hidden;
+}
+
+h1 {
+ color: white;
+ margin-bottom: 0;
+ margin-top: 0;
+ text-align: center;
+ font-size: 40px;
+ font-family:scan-serif;
+ background:#1c1c46;
+ padding:8px;
+ text-shadow:1px 1px 4px #111;
+ margin-bottom:8px;
+}
+
+h3 {
+ color: black;
+ font-size: 20px;
+ margin-top: 3px;
+ text-align: center;
+}
+
+#chatbox {
+ background-color:black;
+ margin-left: auto;
+ margin-right:auto;
+ width: 150vw;
+ max-width:900px;
+ margin-top: 10px;
+ hidden: scroll;
+ height:75vh;
+ box-shadow:inset 0 0 10px 4px #1116;
+ overflow-y:scroll;
+ scroll-behavior:smooth;
+}
+.userText {
+ color: white;
+ font-family: monospace;
+ font-size: 17px;
+ text-align:right;
+ line-height:25px;
+ padding:2%;
+ justify-content:center;
+ }
+
+.userText span {
+ background-color: #009688;
+ padding: 10px;
+ border-radius: 15px;
+ display : inline-block;
+ width:auto;
+ max-width:90%;
+ text-align:justify;
+}
+
+.botText {
+ color: white;
+ font-family: monospace;
+ font-size: 17px;
+ text-align:left;
+ line-height:25px;
+ padding:2%;
+ }
+
+.botText span {
+ background-color: #EF5350;
+ padding: 10px;
+ border-radius: 15px;
+ display : inline-block;
+ width:auto;
+ max-width:90%;
+ text-align:justify;
+}
+
+
+#tidbit {
+ position:absolute;
+ bottom: 0;
+ right:15%;
+ width: 300px;
+}
+
+/*message box and send button div*/
+
+#userInput {
+    display: block;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    font-size: 2220px;
+}
+
+#textInput {
+    float: left;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    background:white;
+    padding:20px;
+    overflow-y:scroll;
+    scroll-behavior:smooth;
+    font size:50%;
+    color:#333;
+    Border-radius:32px 0 32px 32px;
+    border:solid 1px #777;
+    Border-right:none;
+}
+
+#buttonInput {
+    float: right;
+    width: 20%;
+    padding: 20px;
+    height: auto%;
+    background:#1c1c46;
+    font-size:15px;
+    color:#eee;
+    border:none;
+    border-radius:32px 0 32px 32px;
+    border:solid 1px #777;
+    transition-duration:0.1s;
+}
+
+#scroller * {
+  overflow-anchor: none;
+}
+
+#anchor {
+  overflow-anchor: auto;
+  height: 1px;
+}
